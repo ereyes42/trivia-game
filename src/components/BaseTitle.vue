@@ -7,6 +7,7 @@
     <slot name="logo" />
   </div>
 </template>
+
 <style lang="postcss" scoped>
 .brand {
   @apply flex items-center justify-center gap-4;
@@ -15,7 +16,7 @@
     @apply h-12 w-12;
   }
   & .title {
-    @apply text-4xl font-semibold uppercase tracking-wide text-teal-600;
+    @apply text-center text-5xl font-semibold uppercase tracking-wide text-teal-600;
   }
 }
 </style>

@@ -24,8 +24,9 @@ onMounted(async () => {
       :key="category.id"
       :to="`/question/category/${category.id}`"
       class="category"
-      >{{ category.name }}</RouterLink
     >
+      {{ category.name }}
+    </RouterLink>
   </div>
 </template>
 
