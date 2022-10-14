@@ -1,0 +1,23 @@
+<script setup>
+const props = defineProps({
+  correct: {
+    type: Boolean,
+    required: true,
+  },
+})
+</script>
+
+<template>
+  <div
+    class="notification"
+    :class="props.correct ? 'bg-green-300' : 'bg-red-300'"
+  >
+    {{ props.correct ? '✔' : '❌' }}
+  </div>
+</template>
+
+<style lang="postcss" scoped>
+.notification {
+  @apply absolute inset-0 flex items-center justify-center text-8xl tracking-widest text-gray-900;
+}
+</style>
